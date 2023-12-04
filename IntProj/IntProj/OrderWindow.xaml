@@ -1,0 +1,34 @@
+﻿<Window x:Class="IntProj.OrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IntProj"
+        mc:Ignorable="d"
+        Title="orderwindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Grid>
+                <TextBox x:Name="QuantityTextBox" Text="{Binding Quantity, Mode=TwoWay}" Margin="5"/>
+                <Label Content="Quantity" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+            </Grid>
+            <Grid>
+                <TextBox x:Name="AddressTextBox" Text="{Binding Address, Mode=TwoWay}" Margin="5"/>
+                <Label Content="Address" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+            </Grid>
+            <Grid>
+                <TextBox x:Name="ContactNumberTextBox" Text="{Binding ContactNumber, Mode=TwoWay}" Margin="5"/>
+                <Label Content="Contact Number" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+            </Grid>
+            <Grid>
+                <TextBox x:Name="EmailTextBox" Text="{Binding Email, Mode=TwoWay}" Margin="5"/>
+                <Label Content="Email" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+            </Grid>
+            <Grid>
+                <TextBox x:Name="CommentsTextBox" Text="{Binding Comments, Mode=TwoWay}" Margin="5"/>
+                <Label Content="Comments" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+            </Grid>
+            <Button Content="Submit" Click="Button_Click" HorizontalAlignment="Center" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

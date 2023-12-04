@@ -1,0 +1,24 @@
+﻿<Window x:Class="IntProj.OrderLIst"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IntProj"
+        mc:Ignorable="d"
+        Title="OrderLIst" Height="450" Width="800">
+    <Grid>
+        <ListView ItemsSource="{Binding Orders}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}" Width="50"/>
+                    <GridViewColumn Header="Product" DisplayMemberBinding="{Binding Product.Name}" Width="100"/>
+                    <GridViewColumn Header="Quantity" DisplayMemberBinding="{Binding Quantity}" Width="70"/>
+                    <GridViewColumn Header="Address" DisplayMemberBinding="{Binding Address}" Width="150"/>
+                    <GridViewColumn Header="Contact Number" DisplayMemberBinding="{Binding ContactNumber}" Width="100"/>
+                    <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Email}" Width="150"/>
+                    <GridViewColumn Header="Comments" DisplayMemberBinding="{Binding Comments}" Width="200"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
